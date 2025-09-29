@@ -1,13 +1,17 @@
-import { useState } from "react";
-export default function Accordion({ children, title }) {
-  const [show, setShow] = useState(false);
+export default function Accordion({
+  children,
+  title,
+  show,
+  changeOpen,
+  index,
+}) {
   return (
     <>
-      <div className="md:w-3/5 w-3/4 mx-auto border-2 rounded-2xl border-cyan-700 ">
+      <div className="md:w-3/5 w-3/4 mx-auto border-2 rounded-2xl border-cyan-700 my-3">
         <div
-          className="flex flex-row justify-between cursor-pointer items-center"
+          className="flex flex-row justify-between cursor-pointer items-center bg-slate-600 rounded-2xl"
           onClick={() => {
-            setShow(!show);
+            changeOpen(index);
           }}
         >
           <div className="p-2 font-bold text-xl px-4 ">{title}</div>
