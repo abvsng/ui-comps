@@ -1,17 +1,11 @@
-export default function Accordion({
-  children,
-  title,
-  show,
-  changeOpen,
-  index,
-}) {
+export default function Accordion({ children, title, show, changeShow, index }) {
   return (
     <>
       <div className="md:w-3/5 w-3/4 mx-auto border-2 rounded-2xl border-cyan-700 my-3">
         <div
           className="flex flex-row justify-between cursor-pointer items-center bg-slate-600 rounded-2xl"
           onClick={() => {
-            changeOpen(index);
+            changeShow(index);
           }}
         >
           <div className="p-2 font-bold text-xl px-4 ">{title}</div>
