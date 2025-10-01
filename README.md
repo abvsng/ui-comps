@@ -10,11 +10,12 @@ Clone the repo and install dependencies:
 git clone https://github.com/abvsng/ui-comps.git
 cd ui-comps
 npm install
-
+```
 
 ## Each component is setup as individual Pages in the src/Pages folder.
 
 ## To run the project locally:
 
+```bash
 npm run dev
 ```
