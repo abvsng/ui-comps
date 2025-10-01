@@ -1,5 +1,4 @@
 import AccordionGroup from "../Components/Controlled Accordion/AccordionGroup";
-import Accordion from "../Components/Controlled Accordion/AccordionGroup";
 export default function ControlledAccPage() {
   return (
     <>
