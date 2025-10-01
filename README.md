@@ -12,7 +12,9 @@ cd ui-comps
 npm install
 ```
 
-## Each component is setup as individual Pages in the src/Pages folder.
+## Each component is setup as individual Pages in the src/Pages folder.\
+
+Each page has a default export that returns the component. The component can be imported and used in other pages.
 
 ## To run the project locally:
 
