@@ -1,0 +1,30 @@
+import React from "react";
+export default function Modal({ setShow }) {
+  const modalRef = React.useRef(null);
+  React.useEffect(() => {
+    const handleClick = (e) => {
+      if (modalRef.current.contains(e.target)) {
+        setShow(false);
+      }
+    };
+    document.addEventListener("click", handleClick);
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
+  }, [setShow]);
+  return (
+    <>
+      <div
+        ref={modalRef}
+        className=" fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-50 z-10"
+      >
+        <div
+          onClick={(e) => {
+            e.stopPropagation();
+          }}
+          className=" fixed top-1/2 left-1/2 rounded-2xl bg-indigo-600 w-3/5 h-2/3 transform -translate-x-1/2 -translate-y-1/2"
+        ></div>
+      </div>
+    </>
+  );
+}
