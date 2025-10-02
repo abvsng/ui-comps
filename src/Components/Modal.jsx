@@ -7,9 +7,16 @@ export default function Modal({ setShow }) {
         setShow(false);
       }
     };
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        setShow(false);
+      }
+    };
     document.addEventListener("click", handleClick);
+    document.addEventListener("keydown", handleKeyDown);
     return () => {
       document.removeEventListener("click", handleClick);
+      document.removeEventListener("keydown", handleKeyDown);
     };
   }, [setShow]);
   return (
