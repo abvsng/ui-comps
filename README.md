@@ -10,6 +10,7 @@ This repository is a collection of reusable React components styled with Tailwin
 - **State Management:** [Redux Toolkit](https://redux-toolkit.js.org/)
 - **Routing:** [React Router DOM](https://reactrouter.com/)
 - **Data Fetching:** [TanStack React Query](https://tanstack.com/query/v5)
+- **Animation:** [Motion](https://www.motion.dev/)
 - **Linting:** [ESLint](https://eslint.org/)
 
 ## Available Components
@@ -23,6 +24,7 @@ The project includes the following components:
 - **Modal:** A modal dialog component.
 - **Multi-Language Support:** A component demonstrating language switching.
 - **Nested Comments:** A component to display nested comments.
+- **SideBar:** A sidebar component that slides in from the side of the screen.
 
 ## Getting Started
 
@@ -69,7 +71,8 @@ In the project directory, you can run:
 |   |-- /imageSlider
 |   |-- /Modal.jsx
 |   |-- /multi lang
-|   `-- /nestedComments
+|   |-- /nestedComments
+|   `-- /SideBar.jsx
 |-- /Pages
 |   |-- /AccordionPage.jsx
 |   |-- /ControlledAccPage.jsx
@@ -77,7 +80,8 @@ In the project directory, you can run:
 |   |-- /ImageSliderPage.jsx
 |   |-- /ModalPage.jsx
 |   |-- /MultiLangPage.jsx
-|   `-- /NestedCommentsPage.jsx
+|   |-- /NestedCommentsPage.jsx
+|   `-- /SideBarPage.jsx
 |-- /Store
 |   |-- /Slices
 |   `-- /store.jsx
