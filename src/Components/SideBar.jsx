@@ -10,6 +10,9 @@ export default function SideBar({ isOpen, setIsOpen }) {
       }
     };
     document.addEventListener("click", handleClick);
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
   }, []);
   return (
     <>
