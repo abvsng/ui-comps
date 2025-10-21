@@ -1,10 +1,10 @@
 ﻿import "./App.css";
-import SideBarPage from "./Pages/SideBarPage";
+import ModalPage from "./Pages/ModalPage";
 
 function App() {
   return (
     <>
-      <SideBarPage />
+      <ModalPage />
     </>
   );
 }
