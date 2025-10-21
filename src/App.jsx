@@ -1,7 +1,12 @@
 ﻿import "./App.css";
+import SideBarPage from "./Pages/SideBarPage";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <SideBarPage />
+    </>
+  );
 }
 
 export default App;
