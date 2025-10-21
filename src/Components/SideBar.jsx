@@ -4,11 +4,12 @@ import { motion, AnimatePresence } from "motion/react";
 export default function SideBar({ isOpen, setIsOpen }) {
   const boxRef = React.useRef(null);
   React.useEffect(() => {
-    document.addEventListener("click", (e) => {
+    const handleClick = (e) => {
       if (boxRef.current && !boxRef.current.contains(e.target)) {
         setIsOpen(false);
       }
-    });
+    };
+    document.addEventListener("click", handleClick);
   }, []);
   return (
     <>
